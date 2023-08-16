@@ -1,0 +1,252 @@
+/* css for web header */
+#web-header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+#main-header .navbar-nav .nav-link{
+    color: var(--black);
+    font-weight: 600;
+}
+#main-header .navbar-nav .nav-link.active, #main-header .navbar-nav .show>.nav-link, #main-header .navbar-nav .nav-link:hover{
+    color:#192f59
+}
+img.heading-logo {
+   max-height: 68px;
+    padding: 0px 0px;
+}
+a.navbar-brand {
+    padding: 0;
+}
+section.marque-bar.bg-color {
+    background-color: #192f59;
+}
+span.social-text {
+    color: #fff;
+}
+#main-header .course-dropdown{
+    border-radius: 10px;
+}
+#main-header .course-dropdown .w-35{
+    width: 35%;
+}
+#main-header .dropdown:hover .course-dropdown {
+    display: block;
+    margin-top: -22px;
+}
+#main-header .course-dropdown .header-courses-ul{
+    list-style-type: none;
+}
+#main-header .course-dropdown .header-course-li{
+     margin-top: 0.7rem;
+     margin-bottom: 0.7rem;
+ }
+#main-header .course-dropdown .header-course-li a{
+    text-decoration: none;
+    color: var(--black);
+    padding-left: 0.25rem;
+}
+#main-header .course-dropdown .header-course-li a:hover{
+    text-decoration: none;
+    color:#192f59;
+}
+#main-header .course-dropdown .nav-pills .nav-link{
+    color: var(--brand);
+    border-bottom: 1px solid var(--gray);
+    border-radius: 0;
+    padding: 0.65rem 1rem;
+}
+#main-header .course-dropdown .nav-pills .nav-link:last-child{
+    border-bottom: none;
+}
+#main-header .course-dropdown .nav-pills .nav-link:hover{
+    color:#192f59;
+}
+#main-header .course-dropdown .nav-pills .nav-link:hover .active-icon{
+    display: unset;
+}
+#main-header .course-dropdown .nav-pills .nav-link.active, #main-header .course-dropdown .nav-pills .show>.nav-link{
+    color: var(--brand);
+    font-weight: 700;
+    background: transparent;
+}
+
+#main-header .course-dropdown .nav-pills .nav-link .active-icon{
+    display: none;
+}
+#main-header .course-dropdown .nav-pills .nav-link.active .active-icon, #main-header .course-dropdown .nav-pills .show>.nav-link .active-icon{
+    display: unset;
+}
+#main-header .dropdown-toggle::after{
+    display: none;
+}
+#main-header .dropdown-menu{
+    min-width: 200px;
+}
+#main-header .dropdown-menu::after{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0,0,0,.25);
+    border-right: 0;
+    border-bottom: 0;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#main-header .dropdown-menu.course-dropdown::after{
+    left: 56% ;
+}
+#main-header .dropdown-menu.end-0::after{
+    right: 22px;
+    left: unset;
+    background: #ecf5fb;
+}
+#main-header .dropdown-menu.end-0{
+    background: #ecf5fb;
+}
+#main-header .dropdown-item:focus, .dropdown-item:hover{
+    background: transparent;
+    color:#192f59;
+}
+
+@media all and (min-width: 992px) {
+    #main-header .navbar .nav-item .dropdown-menu{ display: none; }
+    #main-header .navbar .nav-item:hover .nav-link{   }
+    #main-header .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    #main-header .navbar .nav-item .dropdown-menu{ margin-top:0px; }
+    #main-header .navbar .nav-item .dropdown-menu.course-dropdown{
+        margin-top:-22px; 
+        width: 55% !important;
+        margin-left:50% !important;
+         }
+}
+#mobile-header{
+    display: none;
+}
+.marque-bar #announcementCarousel .carousel-item p{
+    font-size: 15px;
+    line-height: 28px;
+}
+.marque-bar #announcementCarousel .carousel-item{
+    transition: transform 1.8s ease-in-out;
+}
+#announcementCarousel p b a, #announcementCarousel p i a, #announcementCarousel p u a, #announcementCarousel p a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* css for mobile header */
+@media only screen and (max-width: 768px) {
+    #mobile-header{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: var(--white);
+        display: unset;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .marque-bar li{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .marquee__content {
+        animation: marquee 10s linear infinite forwards !important;
+    }
+    #mobile-menu-container{
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        z-index: 5;
+    }
+    #navbarMobile{
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: #fff;
+        /*position: fixed;*/
+        top: 0 !important;
+    }
+    .dropdown-mobile{
+        background: #fff;
+    }
+    .level-1-mobile, .level-2-mobile, .level-3-mobile{
+        padding: 0.75rem 1.25rem;
+        max-width: 100vw;
+        width: 100vw;
+        height: 100vh;
+        /*border: 1px solid #c1c1c1;*/
+        position: absolute;
+        background:#fff;
+        overflow: auto;
+        border-top: 1px solid var(--gray) !important;
+    }
+    .level-1-mobile{
+        z-index: 11;
+    }
+    .level-2-mobile{
+        z-index: 12;
+    }
+    .level-3-mobile{
+        z-index: 13;
+    }
+    .level-2-mobile, .level-3-mobile{
+        display: none
+    }
+    .mobile-menu-ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .mobile-menu-ul .level-2-mobile-back, .mobile-menu-ul .level-3-mobile-back{
+        color:#192f59;
+        font-weight: 700;
+    }
+    .level-2-mobile .mobile-menu-ul li{
+        padding-bottom: 0.5rem;
+    }
+    #category-level .mobile-menu-ul li{
+        border-bottom: 1px solid var(--gray);
+    }
+    .level-2-mobile .mobile-menu-ul li:last-child, .level-2-mobile .mobile-menu-ul li:first-child{
+        border-bottom: none !important;
+    }
+    .level-2-mobile li.level-2-mobile-back, .level-3-mobile li.level-3-mobile-back{
+        border-bottom: none !important;
+    }
+    .level-1-mobile .mobile-menu-ul li a, .level-2-mobile .mobile-menu-ul li a{
+        color: var(--brand);
+        text-decoration: none;
+    }
+    .level-3-mobile .mobile-menu-ul li a{
+        color: var(--black);
+        text-decoration: none;
+    }
+    #mobile-header .navbar-toggler{
+        border: none;
+        background: var(--light);
+        border-radius: 50%;
+        padding: 5px 7px;
+        width: 40px;
+        height: 40px;
+    }
+    #mobile-header .navbar-toggler:focus{
+        border: none;
+        box-shadow: none;
+    }
+}
+
+h2.text-brand {
+    position: relative;
+}
+
+h2.text-brand::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    bottom: 18px;
+    height: 2px;
+    background-color: #192f59;
+}

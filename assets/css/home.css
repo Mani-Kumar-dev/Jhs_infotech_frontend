@@ -1,0 +1,353 @@
+.home-banner{
+    background: linear-gradient(90deg, rgba(5,35,91,1) 33%, rgba(25,42,75,0.6702031154258579) 71%, rgba(25,47,89,0.5889706224286589) 97%, rgba(27,28,35,0.6758053563222164) 100%),url('../../assets/images/banner1.jpg') no-repeat center;
+    background-size:cover;
+}
+.home-banner .btn-brand{
+    border: 1px solid var(--white);
+}
+.home-banner .btn-brand:hover{
+    border: 1px solid transparent;
+}
+.home-banner .numbers-row{
+    background: var(--light);
+    border-radius: 10px;
+}
+.home-banner .numbers-row .col-md-8{
+    border-radius: 0 10px 10px 0;
+}
+.home-banner .numbers-row .col-md-8 .col-md-3:nth-child(n+2){
+    border-left: 2px solid var(--gray);
+}
+.home-banner .numbers-row .col-md-4{
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+    background:#192f59;
+    z-index: 1;
+}
+.home-banner .numbers-row .col-md-4 .badge-img{
+    
+        width: 160px;
+        margin: -14px -22px;
+    
+}
+.home-banner .numbers-row .col-md-4::before{
+    content: "";
+    position: absolute;
+    left: 100%;
+    border-style: solid;
+    border-width: 70px 0px 70px 50px;
+    border-color: transparent var(--blue) transparent ;
+    z-index: -1;
+}
+@media only screen and (max-width:426px)
+{
+    .top-header-social {
+        text-align: center !important;
+    }
+    ul#pills-tab {
+        margin-left: 50px;
+    }
+    .footer_col {
+        text-align: center !important;
+    }
+    .foot_links a {
+        margin-right: -85px;
+        margin-top: 6px;
+    }
+    h2.text-brand::before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        bottom: 18px;
+        height: 2px;
+        background-color: #192f59;
+        display:none;
+    }
+    .foot_logo {
+        margin-left: 40px;
+    }
+}
+@media only screen and (min-width:427px) and (max-width:767px)
+{
+    .top-header-social {
+        text-align: center !important;
+    }
+    h2.text-brand::before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        bottom: 18px;
+        height: 2px;
+        background-color: #192f59;
+        display: none;
+    }
+    ul#pills-tab {
+        margin-left: 105px;
+    }
+    .footer_col {
+        text-align: center !important;
+    }
+    .foot_links a {
+    
+            margin-left: 41px;
+            margin-inline-end: -11px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:768px)
+{
+    img.ps-md-4.badge-img.ps-0 {
+        margin-inline-start: -32px !important;
+        margin-inline-end: -15px !important;
+        margin-top: 4px !important;
+    }
+    .head_year {
+        margin-inline-start: -80px !important;
+        margin-inline-end: -6px !important;
+    }
+    .place {
+        font-size: 12px !important;
+        margin-top: 9px !important;
+    }
+    
+}l
+
+/*.placement-section .placement-inner{
+    background: url('/assets/images/placement-inner-bg.png') center right no-repeat;
+    background-size: cover;
+    border: 1px solid #ff1949;
+    border-radius: 10px;
+}
+*/
+.placement-section .placement-inner .hr-gradient:before{
+    content: "";
+    background: linear-gradient(90deg, #ADADAD 0%, rgba(217, 217, 217, 0) 88.4%);
+    height: 2px;
+    width: 100%;
+    display: block;
+}
+.placement-section .placement-inner .job-div{
+    border-right: 2px solid var(--gray);
+}
+
+.placement-initiatives .nav-pills .nav-link{
+        color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.placement-initiatives .nav-pills .nav-link:hover{
+    background: var(--light);
+}
+.placement-initiatives .nav-pills .nav-link.active, .gallery-section .nav-pills .show>.nav-link{
+    background: var(--blue);
+    color: var(--white);
+}
+.placement-initiatives .initiative-tab-content .registration-form, #registrationForm .registration-form{
+    background: linear-gradient(180deg, rgba(141, 188, 218, 0.2) 0%, rgba(85, 172, 238, 0.2) 50.86%, rgba(235, 246, 255, 0.2) 100%);
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.placement-initiatives .initiative-tab-content .form-banner{
+    background: linear-gradient(90deg, rgba(179,53,79,1) 0%, rgba(173,79,98,0.9223039557619923) 53%, rgba(115,105,105,0.9783263647255778) 100%),url('/assets/images/form_bg.png') no-repeat center;
+    background-size: cover;
+    border-radius: 0.45rem 0.45rem 0px 0px;
+}
+.placement-initiatives .initiative-tab-content ul {
+    list-style: none; /* Remove default bullets */
+}
+.placement-initiatives .initiative-tab-content ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--blue); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    font-size: 30px; /* If you want it to be bold */
+    line-height: 20px;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1.3rem; /* Also needed for space (tweak if needed) */
+    margin-left: -1.3rem; /* Also needed for space (tweak if needed) */
+    position: relative;
+    top: 3px;
+}
+
+.valuable-articles .article-card{
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+}
+.valuable-articles .article-img{
+    border-radius: 10px 10px 0 0;
+}
+.valuable-articles .article-card:hover{
+    background: #EBF6FF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*infinite slider css*/
+@keyframes logoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+#companies-logo .logo-slider {
+    /*background: white;*/
+    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+#companies-logo .logo-slider::before, #companies-logo .logo-slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+#companies-logo .logo-slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+#companies-logo .logo-slider::before {
+    left: 0;
+    top: 0;
+}
+#companies-logo .logo-slider .slide-track {
+    animation: logoScroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+#companies-logo .logo-slider .logo-slide {
+    height: 200px;
+    width: 250px;
+    /*filter: grayscale(1);*/
+}
+/*infinite slider css*/
+
+#collaboration-slider .collaboration-logo{
+    width: auto;
+    height: 100%;
+}
+
+
+.blog-section .card{
+    box-shadow: 4px 4px 31px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #C1C1C1;
+}
+.flipster__button{
+    margin: unset;
+    top:40%;
+}
+.flipster__button svg {
+    width: 1rem;
+}
+#placementForm .form-banner{
+    background: url('/images/home/jobfest-form-header.png') no-repeat center;
+    background-size: cover;
+    border-radius: 0.5rem 0.5rem 0px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-banner{
+        
+        background:  linear-gradient(90deg, rgba(67,68,70,0.5609594179468662) 0%, rgba(25,47,89,0.8410714627647934) 0%),url("/assets/images/bannermob.jpg") no-repeat;
+        background-size: cover;
+        background-position:50% 50%;
+   }
+    .home-banner .numbers-row .col-md-4::before{
+        display: none;
+    }
+    .home-banner .numbers-row{
+        width: 95%;
+        margin: auto;
+    }
+    .home-banner .numbers-row .col-md-4{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .home-banner .numbers-row .col-md-8 .col-md-3:nth-child(n+2){
+        border: none;
+    }
+    .home-banner .numbers-row .col-md-8 .col-md-3:nth-child(2n-1){
+        border-right: 1px solid var(--gray);
+        border-left: none;
+    }
+    .home-banner .numbers-row .col-md-8 .col-md-3:nth-child(n+3){
+        border-top: 1px solid var(--gray);
+    }
+    .home-banner .numbers-row .col-md-4 .badge-img{
+        width: 120px;
+        margin-top: -50px;
+        margin-bottom: 15px;
+    }
+
+    .placement-initiatives .registration-form, .courses-section .course-search, .placement-section .placement-inner .hr-gradient:before{
+        display: none;
+    }
+    .placement-section .placement-inner .job-div{
+        border:none;
+    }
+    .placement-section img.placement-banner{
+        border-radius: 10px 10px 0 0;
+    }
+    .courses-section #course-tab .nav-item .nav-link{
+        padding: 0.5rem 0.75rem ;
+    }
+    .initiative-tab-content .cta-div{
+        justify-content: space-evenly;
+    }
+    .nsdc-certificate .nsdc-img{
+        width: 80%;
+    }
+
+    .course-item-accordion .accordion-item{
+        background-color:transparent !important;
+        border:none;
+    }
+    .course-item-accordion .course-item-mobile{
+        border-bottom: 1px solid var(--gray);
+    }
+    .course-item-accordion .course-item-mobile a{
+        text-decoration: none;
+        color: var(--brand);
+    }
+    .course-item-accordion .accordion-button:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .course-item-accordion .accordion-button{
+        border-radius: 5px !important;
+        border-bottom: 2px solid var(--light);
+    }
+    .course-item-accordion .accordion-button:not(.collapsed){
+        color: var(--brand);
+        background: var(--white);
+        border: 1px solid var(--blue);
+    }
+    .course-item-accordion .accordion-button:not(.collapsed)::after{
+        background-image: var(--bs-accordion-btn-icon);
+    }
+    .placement-section .placement-inner {
+        background: rgba(214, 239, 255, 0.3);
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1200px){
+    .imgpos {
+        position: relative;
+    }
+    img.assistance {
+        position: absolute;
+        /* left: 0; */
+        right: 20px;
+        bottom: 200px;
+        width: 100px;
+        height: 100px;
+    }
+    
+}
+@media only screen and (min-width:768px) and (max-width:992px)
+{
+
+}

@@ -1,0 +1,444 @@
+/*infinite slider css*/
+@keyframes logoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+#companies-logo .logo-slider {
+    /*background: white;*/
+    /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+#companies-logo .logo-slider::before, #companies-logo .logo-slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+#companies-logo .logo-slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+#companies-logo .logo-slider::before {
+    left: 0;
+    top: 0;
+}
+#companies-logo .logo-slider .slide-track {
+    animation: logoScroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 11);
+}
+#companies-logo .logo-slider .logo-slide {
+    height: 200px;
+    width: 250px;
+}
+/*infinite slider css*/
+
+/*owl navigation button css*/
+button.owl-prev{
+    position: absolute;
+    top: 45%;
+    left: -2%;
+    z-index: 9;
+    border: 2px var(--brand) solid !important;
+    background: #fff!important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 100%!important;
+    font-size: 24px!important;
+}
+button.owl-next{
+    position: absolute;
+    top: 45%;
+    right: -2%;
+    z-index: 9;
+    border: 2px var(--brand) solid !important;
+    background: #fff!important;
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 100%!important;
+    font-size: 24px!important;
+
+}
+button.owl-next i, button.owl-prev i{
+    font-size: 18px !important;
+    line-height: 2rem !important;
+    vertical-align: middle !important;
+    /*top: 2px !important;*/
+    /*position: absolute !important;*/
+    /*right: 18px;*/
+}
+.owl-theme .owl-nav [class*=owl-],.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent ;
+    color: var(--brand);
+    font-size: 18px;
+    margin: -1px;
+}
+
+.owl-theme .owl-nav .disabled [class*=owl-]{
+    color: var(--gray);
+}
+.owl-theme .owl-nav .disabled{
+    opacity: 1;
+    border-color: var(--gray) !important;
+}
+/*owl navigation button css*/
+/*testimonial section css*/
+#testimonial-slider .card{
+    width: calc(13rem + 5vw);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    height: calc(10rem + 10vh);
+    border: 1px solid var(--lightgray);
+}
+#testimonial-slider .card .testimonial-logo{
+    width: auto;
+}
+#testimonial-slider .card .testimonial-thumbnail{
+    height: 120px;
+    width: auto;
+}
+#testimonial-slider .card .testimonial-content{
+    height: 120px;
+    overflow: hidden;
+}
+/*testimonial section css*/
+
+/*locations section css*/
+.location-card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+}
+.location-card .location-contact a, .location-card .location-direction a{
+    color: var(--black);
+    text-decoration: none;
+}
+.location-card .fa-location-dot{
+    color: #ED1C24;
+}
+.location-card:hover{
+    border: 1px solid var(--blue);
+}
+.location-card:hover .location-contact a, .location-card:hover .location-direction a{
+    color: var(--blue);
+    text-decoration: underline;
+}
+.location-card:hover .location-contact a i{
+    color: var(--green);
+}
+.location-card:hover .location-direction a i{
+    color: #3785D7;
+}
+.location-card .location-link .btn{
+    background: var(--white);
+    border-radius: 10px;
+    color: var(--blue) !important;
+    font-weight: 500;
+    margin: auto;
+}
+.location-card .location-link{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(46, 49, 146, 0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 10px;
+}
+.location-card:hover .location-link{
+    display: flex;
+}
+
+.location-card .location-img{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.training-centers{
+    background: url('/images/location-bg.jpg') no-repeat center;
+    background-size: cover;
+}
+/*locations section css*/
+/*certificate section css*/
+.nsdc-certificate .nsdc-img{
+        width: 40%;
+}
+/*collaborations section css*/
+#collaboration-slider .collaboration-logo{
+    width: auto;
+    height: 100%;
+}
+.valuable-articles .article-card{
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+}
+.valuable-articles .article-card .article-title{
+    height: 90px;
+    overflow: hidden;
+}
+.valuable-articles .article-img{
+    border-radius: 10px 10px 0 0;
+}
+.valuable-articles .article-card:hover{
+    background: #EBF6FF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+/*#collaboration-slider .collaboration-img{*/
+/*    height: 100%;*/
+/*    width: auto !important;*/
+/*    object-fit: cover;*/
+/*}*/
+/*webinar section css*/
+#webinar-slider .item{
+    height: 100%;
+    padding: 10px;
+}
+#webinar-slider .webinar-card{
+    background: rgba(214, 239, 255, 0.3);
+    border: 1px solid #ff1949;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#webinar-slider .webinar-card .webinar-thumbnail{
+    max-height: 280px;
+    /*width: auto;*/
+    object-fit: contain;
+    margin: auto;
+}
+#webinar-slider .webinar-card .fa-circle-play{
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    border-radius: 100%;
+}
+/*#webinar-slider .play-img{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+.blog-section .card{
+    box-shadow: 4px 4px 31px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #C1C1C1;
+}
+.blog-section .card .blog-title{
+    height: 50px;
+    overflow: hidden;
+}
+.blog-section .card .blog-content{
+    height: 100px;
+    overflow: hidden;
+}
+/*flipster nav buttons css*/
+.flipster__button{
+    margin: unset;
+    top:40%;
+}
+.flipster__button svg {
+    width: 1rem;
+}
+.flip-carousel .flip-items .placement-media{
+    width: 500px !important;
+}
+/*flipster nav buttons css*/
+
+/*inquiry modal css*/
+#inquiryForm .form-banner{
+    background: url('/images/inquiry-bg.png') no-repeat left top;
+    background-size: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+/*ratings section css*/
+.rating-section .rating-logo{
+    height: 40px;
+}
+.star-set .rating-stars .text-warning{
+    color: #F9A825 !important;
+    }
+/*loader css*/
+.course-loader {
+    /*--path: #2f3545;*/
+    --path: #fff;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+}
+.course-loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--blue);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+.course-loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.course-loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+@keyframes dotRect {
+    25% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(18px, -18px);
+    }
+    75% {
+        transform: translate(0, -36px);
+    }
+    100% {
+        transform: translate(-18px, -18px);
+    }
+}
+@keyframes pathCircle {
+    25% {
+        stroke-dashoffset: 125;
+    }
+    50% {
+        stroke-dashoffset: 175;
+    }
+    75% {
+        stroke-dashoffset: 225;
+    }
+    100% {
+        stroke-dashoffset: 275;
+    }
+}
+.blockUI.blockMsg.blockPage{
+    background: transparent !important;
+    border: none !important;
+    z-index: 9999 !important;
+}
+.blockUI.blockOverlay{
+    z-index: 9099 !important;
+}
+/*loader css end*/
+@media only screen and (max-width: 768px) {
+    .scroll-carousel{
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 20px;
+    }
+    button.owl-prev{
+        position: absolute;
+        top: 102%;
+        left: 30%;
+        z-index: 9;
+        border: 2px var(--brand) solid !important;
+        background: #fff!important;
+        height: 40px !important;
+        width: 40px !important;
+        border-radius: 100%!important;
+        font-size: 24px!important;
+    }
+    button.owl-next{
+        position: absolute;
+        top: 102%;
+        right: 30%;
+        z-index: 9;
+        border: 2px var(--brand) solid !important;
+        background: #fff!important;
+        height: 40px !important;
+        width: 40px !important;
+        border-radius: 100%!important;
+        font-size: 24px!important;
+
+    }
+    button.owl-next i, button.owl-prev i{
+        font-size: 18px !important;
+        line-height: 2rem !important;
+        vertical-align: middle !important;
+        /*top: 2px !important;*/
+        /*position: absolute !important;*/
+        /*right: 18px;*/
+    }
+    #webinar-slider .webinar-card .webinar-title{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #webinar-slider .webinar-card .webinar-thumbnail{
+        max-height: 250px;
+        object-fit: cover;
+    }
+    .training-centers .location-card, #testimonial-slider .card{
+        width: calc(15rem + 10vw);
+    }
+    .location-card .location-contact a, .location-card .location-direction a{
+        font-size: 14px;
+    }
+    .training-centers .scroll-carousel::-webkit-scrollbar-track {
+        margin-right: 10px;
+        border-radius: 10px;
+        background-color: var(--lightgray) !important;
+    }
+    .training-centers .scroll-carousel::-webkit-scrollbar {
+        background-color: var(--lightgray) !important;
+        height: 4px !important;
+        width: 4px !important;
+        border-radius: 10px;
+    }
+    .training-centers .scroll-carousel::-webkit-scrollbar-thumb {
+        background-color: var(--blue) !important;
+        border-radius: 20px;
+        margin-top: -1rem;
+        margin-bottom: -1rem;
+    }
+    /*collaborations section css*/
+    #collaboration-slider .collaboration-img{
+        width: calc(15rem + 10vw);
+    }
+    /*blogs section css*/
+    .blog-section .card{
+        width: calc(15rem + 10vw);
+    }
+    /*certificate section css*/
+    .nsdc-certificate .nsdc-img{
+        width: 80%;
+    }
+    /*ratings section css*/
+    .rating-section .rating-logo{
+        height: 30px;
+    }
+    .flip-carousel .flip-items .placement-media{
+        width: 250px !important;
+    }
+    #companies-logo .logo-slider .logo-slide {
+        margin-right: 1rem;
+    }
+    .valuable-articles .article-card .article-title{
+        height: unset;
+        overflow: unset;
+    }
+    .training-centers{
+        background: #f7f7f7;
+        background-size: cover;
+    }
+}
